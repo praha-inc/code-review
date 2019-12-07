@@ -36,11 +36,13 @@ if (hoge) {
 
 
 ### [Vue]
-- component を作る際、computed で済む項目を data に入れない。理由：出来るだけ component には state を持たせず関数的に書くことで component の再利用性を高める
+- component を作る際、computed で済む項目を data に入れない
+  - 理由：出来るだけ component には state を持たせず関数的に書くことで component の再利用性を高める
+
 
 ### [Node.js]
 - Promiseな関数を連続で実行する（awaitを連続で書く）場合かつ並列で実行して問題ない場合は、Promise.all() を使用すること
-処理速度向上のため
+  - 処理速度向上のため
 
 ```
 NG
@@ -53,8 +55,8 @@ await Promise.all(aPromiseFunction(), bPromiseFunction())
 
 #### [Jest]
 - 要素数と文字列長をテストをする場合は、toHaveLength() を使うこと
-可読性の向上のため
-ref: https://jestjs.io/docs/en/expect#tohavelengthnumber
+  - 可読性の向上のため
+  - ref: https://jestjs.io/docs/en/expect#tohavelengthnumber
 ```
 NG
 expect(nArray.length).toBe(0)
