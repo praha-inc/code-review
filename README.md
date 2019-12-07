@@ -40,6 +40,7 @@ if (hoge) {
 
 ### [Node.js]
 - Promiseな関数を連続で実行する（awaitを連続で書く）場合かつ並列で実行して問題ない場合は、Promise.all() を使用すること
+処理速度向上のため
 
 ```
 NG
@@ -51,8 +52,9 @@ await Promise.all(aPromiseFunction(), bPromiseFunction())
 ```
 
 #### [Jest]
-- lengthのテストをする場合は、toHaveLength() を使うこと
-
+- 要素数と文字列長をテストをする場合は、toHaveLength() を使うこと
+可読性の向上のため
+ref: https://jestjs.io/docs/en/expect#tohavelengthnumber
 ```
 NG
 expect(nArray.length).toBe(0)
