@@ -5,7 +5,7 @@
 
 ## チェックシート
 
-[全般]
+### [全般]
 
 - console.log の消し忘れ（lint で今後弾いたらこのチェックシートから削除）
 
@@ -32,5 +32,5 @@ if (hoge) {
 
 理由：可読性の向上。詳しくはリーダブルコードなど参照
 
-- [Vue]
-  - component を作る際、computed で済む項目を data に入れない。理由：出来るだけ component には state を持たせず関数的に書くことで component の再利用性を高める
+### [Vue]
+- component を作る際、computed で済む項目を data に入れない。理由：出来るだけ component には state を持たせず関数的に書くことで component の再利用性を高める
