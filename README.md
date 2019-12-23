@@ -34,6 +34,8 @@ if (hoge) {
 
 - 未使用の変数を残さない！消す！
 
+- あるPR/issueの後続系PRを作成するときは、必ず対象PR/issueへのリンクを貼る
+  - レビュワーが開発の流れを追いやすくなる
 
 ### [Vue]
 - component を作る際、computed で済む項目を data に入れない
@@ -52,6 +54,9 @@ await bPromiseFunction()
 OK
 await Promise.all(aPromiseFunction(), bPromiseFunction())
 ```
+
+- 基本的に==ではなく===を使う
+  - 意図しない等価結果を防ぐ。例えば 0 == false, '' == false はtrueになる。こういった挙動を理解した上で使えるようにするため、基本は===を習慣づける
 
 #### [Jest]
 - 要素数と文字列長をテストをする場合は、toHaveLength() を使うこと
